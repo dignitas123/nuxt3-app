@@ -1,4 +1,11 @@
-<!-- This example requires Tailwind CSS v2.0+ -->
+<script setup lang="ts">
+import { ref } from 'vue'
+import { Dialog, DialogOverlay, DialogTitle, TransitionChild, TransitionRoot } from '@headlessui/vue'
+import { CheckIcon } from '@heroicons/vue/outline'
+
+const open = ref(false)
+</script>
+
 <template>
     <div class="flex items-center justify-center">
         <button @click="open = !open" class="bg-white p-4 rounded-lg">Open Modal</button>
@@ -70,27 +77,3 @@
         </TransitionRoot>
     </div>
 </template>
-
-<script lang="ts">
-import { ref } from 'vue'
-import { Dialog, DialogOverlay, DialogTitle, TransitionChild, TransitionRoot } from '@headlessui/vue'
-import { CheckIcon } from '@heroicons/vue/outline'
-
-export default {
-    components: {
-        Dialog,
-        DialogOverlay,
-        DialogTitle,
-        TransitionChild,
-        TransitionRoot,
-        CheckIcon,
-    },
-    setup() {
-        const open = ref(false)
-
-        return {
-            open,
-        }
-    },
-}
-</script>

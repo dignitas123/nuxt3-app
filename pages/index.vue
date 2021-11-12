@@ -1,3 +1,16 @@
+<script setup lang="ts">
+import { ArrowNarrowRightIcon } from '@heroicons/vue/outline'
+import { links } from '@/interface/links'
+
+const router = useRouter()
+const lists = ref<links[]>([
+    { id: 1, title: 'Pinia Store', url: 'pinia' },
+    { id: 1, title: 'Modal', url: 'modal' },
+        { id: 1, title: 'Menu', url: 'menu' },
+    { id: 1, title: 'New soon...', url: '' },
+])
+</script>
+
 <template>
     <div class="max-w-sm mx-auto mt-4">
         <div class="flex items-center">
@@ -28,31 +41,3 @@
         </ul>
     </div>
 </template>
-
-<script lang="ts">
-import { ArrowNarrowRightIcon } from '@heroicons/vue/outline'
-
-interface links {
-    id: number
-    title: string
-    url: any
-}
-
-export default {
-    components: {
-        ArrowNarrowRightIcon
-    },
-    setup() {
-        const router = useRouter()
-        const lists = ref<links[]>([
-            { id: 1, title: 'Pinia Store', url: 'pinia' },
-            { id: 1, title: 'Modal', url: 'modal' },
-             { id: 1, title: 'Menu', url: 'menu' },
-            { id: 1, title: 'New soon...', url: '' },
-        ])
-        return {
-            lists
-        }
-    }
-}
-</script>

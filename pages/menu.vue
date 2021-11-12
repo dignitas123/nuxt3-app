@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue'
+import { ChevronDownIcon, ArchiveIcon, DuplicateIcon, CheckCircleIcon, AcademicCapIcon, ArrowLeftIcon } from '@heroicons/vue/solid'
+</script>
+
 <template>
     <div class="flex items-center justify-center w-screen h-screen">
         <div class="w-56 text-right fixed top-16">
@@ -108,22 +113,3 @@
         </div>
     </div>
 </template>
-
-<script>
-import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue'
-import { ChevronDownIcon, ArchiveIcon, DuplicateIcon, CheckCircleIcon, AcademicCapIcon, ArrowLeftIcon } from '@heroicons/vue/solid'
-export default {
-    components: {
-        Menu,
-        MenuButton,
-        MenuItems,
-        MenuItem,
-        ChevronDownIcon,
-        ArchiveIcon,
-        DuplicateIcon,
-        CheckCircleIcon,
-        AcademicCapIcon,
-        ArrowLeftIcon,
-    },
-}
-</script>
