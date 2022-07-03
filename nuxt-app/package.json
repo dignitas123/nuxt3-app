@@ -8,5 +8,9 @@
   },
   "devDependencies": {
     "nuxt": "3.0.0-rc.4"
+  },
+  "dependencies": {
+    "sass": "^1.53.0",
+    "sass-loader": "^13.0.2"
   }
 }
